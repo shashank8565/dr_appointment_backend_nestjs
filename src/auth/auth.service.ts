@@ -4,7 +4,7 @@ import {
   BadRequestException,
   UnauthorizedException,
 } from '@nestjs/common';
-import { UserRepository } from 'src/Repository/user.repository';
+import { UserRepository } from 'src/Repository/userRepository/user.repository';
 
 import { JwtService } from '@nestjs/jwt';
 
