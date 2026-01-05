@@ -1,4 +1,4 @@
-import { SignUpDto } from './../dto/signup.dto';
+import { SignUpDto } from '../dto/authDto/signup.dto';
 import {
   Injectable,
   BadRequestException,

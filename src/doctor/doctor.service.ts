@@ -10,4 +10,8 @@ export class DoctorService {
 
     return allDoctorsUnderArea;
   }
+
+  async getDoctorById(id: string) {
+    return this.doctorRepository.getDoctorById(id);
+  }
 }
