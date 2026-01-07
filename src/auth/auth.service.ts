@@ -20,7 +20,7 @@ export class AuthService {
     if (!user || user.password !== password) {
       throw new UnauthorizedException('Invalid credentials');
     }
-    const token = this.jwtService.sign({ userId: user.id });
+    const token = this.jwtService.sign({ sub: user.id, email: user.email });
     return { token };
   }
 
